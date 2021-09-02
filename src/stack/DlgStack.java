@@ -62,9 +62,9 @@ public class DlgStack extends JDialog {
 
 		JLabel lblY = new JLabel("Y:");
 
-		JLabel lblHeight = new JLabel("Height:");
+		JLabel lblHeight = new JLabel("Visina:");
 
-		JLabel lblWidth = new JLabel("Width:");
+		JLabel lblWidth = new JLabel("Širina:");
 
 		txtX = new JTextField();
 		txtX.addKeyListener(new KeyAdapter() {
@@ -159,10 +159,14 @@ public class DlgStack extends JDialog {
 
 						if (txtX.getText().trim().isEmpty() || txtY.getText().trim().isEmpty()
 								|| txtHeight.getText().trim().isEmpty() || txtWidth.getText().trim().isEmpty()) {
+							
 							JOptionPane.showMessageDialog(null, "Polja moraju biti popunjena!");
+							
 							isOk = false;
 							setVisible(true);
+							
 						} else {
+							
 							isOk = true;
 							dispose();
 						}

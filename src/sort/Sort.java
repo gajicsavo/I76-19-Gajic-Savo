@@ -62,13 +62,15 @@ public class Sort extends JFrame {
 				(Toolkit.getDefaultToolkit().getScreenSize().height - getSize().height) / 2);
 		setContentPane(contentPane);
 
-		JButton btnAdd = new JButton("Generi≈°i");
+		JButton btnAdd = new JButton("Generiöi");
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 
 				SortFunction.generateRectangle(list1);
+				
 				dlm.removeAllElements();
 				dlm2.removeAllElements();
+				
 				for (Rectangle r : list1)
 					dlm.addElement(r.toString() + ", area= " + r.area());
 
@@ -80,7 +82,7 @@ public class Sort extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				if (dlm.isEmpty()) {
-					JOptionPane.showMessageDialog(null, "Generi≈°ite pravougaonike!");
+					JOptionPane.showMessageDialog(null, "Generiöite pravougaonike!");
 				} else {
 
 					Arrays.sort(list1, s1.getComp());

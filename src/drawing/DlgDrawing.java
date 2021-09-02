@@ -116,7 +116,7 @@ public class DlgDrawing extends JFrame {
 		ButtonGroup buttonGroup = new ButtonGroup();
 		
 		
-		tglbtnPoint = new JToggleButton("Ta\u010Dka");
+		tglbtnPoint = new JToggleButton("Tačka");
 		tglbtnPoint.addActionListener(new ActionListener() {
 
 			@Override
@@ -239,6 +239,7 @@ public class DlgDrawing extends JFrame {
 				} else if(pnlDrawing.getSelectedShape() instanceof Line) {
 					
 					Line temp = (Line) pnlDrawing.getSelectedShape();
+					
 					lineModification.getTxtStartPointX().setText("" + temp.getStartPoint().getX());
 					lineModification.getTxtStartPointY().setText("" + temp.getStartPoint().getY());
 					
@@ -248,6 +249,7 @@ public class DlgDrawing extends JFrame {
 					lineModification.getBtnBorderColor().setBackground(temp.getColor());
 					
 					lineModification.setVisible(true);
+					
 					if(lineModification.isOk){
 						temp.getStartPoint().moveBy(lineModification.getStartPoint().getX(), lineModification.getStartPoint().getY());
 						temp.getEndPoint().moveBy(lineModification.getEndPoint().getX(), lineModification.getEndPoint().getY());
@@ -268,6 +270,7 @@ public class DlgDrawing extends JFrame {
 					rectangleModification.setVisible(true);
 
 					if(rectangleModification.isOk){
+						
 						temp.getUpperLeftPoint().moveBy(rectangleModification.getP().getX(), rectangleModification.getP().getY());
 						temp.setHeight(rectangleModification.getH());
 						temp.setWidth(rectangleModification.getW());

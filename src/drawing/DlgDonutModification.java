@@ -38,7 +38,7 @@ public class DlgDonutModification extends JDialog {
 	private JButton btnInnerColor;
 	Point center;
 	private Donut newDonut;
-	int r, ir;
+	private int r, ir;
 	public boolean isOk = false;
 
 	/**
@@ -77,7 +77,7 @@ public class DlgDonutModification extends JDialog {
 		lblNewLabel_2.setBounds(13, 82, 70, 15);
 		contentPanel.add(lblNewLabel_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("Unutra≈°nji radius:");
+		JLabel lblNewLabel_3 = new JLabel("Unutraönji radius:");
 		lblNewLabel_3.setBounds(12, 109, 144, 15);
 		contentPanel.add(lblNewLabel_3);
 		
@@ -85,7 +85,7 @@ public class DlgDonutModification extends JDialog {
 		lblNewLabel_4.setBounds(12, 150, 130, 15);
 		contentPanel.add(lblNewLabel_4);
 		
-		JLabel lblBojaUnutrasnjosti = new JLabel("Boja unutra≈°njosti:");
+		JLabel lblBojaUnutrasnjosti = new JLabel("Boja unutraönjosti:");
 		lblBojaUnutrasnjosti.setBounds(12, 181, 201, 15);
 		contentPanel.add(lblBojaUnutrasnjosti);
 		
@@ -161,7 +161,7 @@ public class DlgDonutModification extends JDialog {
 		btnInnerColor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Color innerColor = Color.WHITE;
-				innerColor = JColorChooser.showDialog(null, "Izaberite boju unutra≈°njosti", innerColor);
+				innerColor = JColorChooser.showDialog(null, "Izaberite boju unutraönjosti", innerColor);
 				btnInnerColor.setBackground(innerColor);
 						
 			}
@@ -186,7 +186,7 @@ public class DlgDonutModification extends JDialog {
 							isOk = true;
 							setVisible(false);
 							} catch (NumberFormatException e) {
-								JOptionPane.showMessageDialog(null, "Niste uneli tra≈æene podatke!", "Gre≈°ka", JOptionPane.ERROR_MESSAGE);
+								JOptionPane.showMessageDialog(null, "Niste uneli traûene podatke!", "Greöka", JOptionPane.ERROR_MESSAGE);
 							}
 							
 					

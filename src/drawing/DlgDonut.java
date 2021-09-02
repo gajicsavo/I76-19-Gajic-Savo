@@ -54,7 +54,7 @@ public class DlgDonut extends JDialog {
 			contentPanel.add(lblNewLabel);
 		}
 		{
-			JLabel lblNewLabel_1 = new JLabel("Unesite unutra≈°nji radius:");
+			JLabel lblNewLabel_1 = new JLabel("Unesite unutraönji radius:");
 			lblNewLabel_1.setBounds(12, 76, 212, 15);
 			contentPanel.add(lblNewLabel_1);
 		}
@@ -101,7 +101,7 @@ public class DlgDonut extends JDialog {
 							innerRadius = Integer.parseInt(txtInnerRadius.getText());
 							dispose();
 						} catch (NumberFormatException e1) {
-							JOptionPane.showMessageDialog(null, "Niste uneli tra≈æene podatke!", "Gre≈°ka", JOptionPane.ERROR_MESSAGE);							
+							JOptionPane.showMessageDialog(null, "Niste uneli traûene podatke!", "Greöka", JOptionPane.ERROR_MESSAGE);							
 
 						}
 					}

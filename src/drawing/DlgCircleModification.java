@@ -168,7 +168,7 @@ public class DlgCircleModification extends JDialog {
 							
 						} catch (NumberFormatException e2) {
 							// TODO: handle exception
-							JOptionPane.showMessageDialog(null, "Niste uneli tra�ene podatke!", "Gre�ka", JOptionPane.ERROR_MESSAGE);
+							JOptionPane.showMessageDialog(null, "Niste uneli tražene podatke!", "Greïška", JOptionPane.ERROR_MESSAGE);
 						}
 					}
 				});

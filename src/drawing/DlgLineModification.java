@@ -70,7 +70,7 @@ public class DlgLineModification extends JDialog {
 		lblNewLabel_2.setBounds(12, 102, 212, 15);
 		contentPanel.add(lblNewLabel_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("Y koordinata krajnje tačke:");
+		JLabel lblNewLabel_3 = new JLabel("Y koordinata krajnje tačkee:");
 		lblNewLabel_3.setBounds(12, 138, 196, 15);
 		contentPanel.add(lblNewLabel_3);
 		
@@ -162,7 +162,7 @@ public class DlgLineModification extends JDialog {
 							
 							setVisible(false);
 						} catch (NumberFormatException e1) {
-							JOptionPane.showMessageDialog(null,"Niste uneli tražene podatke!", "Grežka", JOptionPane.ERROR_MESSAGE);
+							JOptionPane.showMessageDialog(null,"Niste uneli traÅ¾ene podatke!", "GreÅ¾ka", JOptionPane.ERROR_MESSAGE);
 
 						}
 					

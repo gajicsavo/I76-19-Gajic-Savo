@@ -82,7 +82,7 @@ public class DlgCircle extends JDialog {
 						
 							dispose();
 						} catch (NumberFormatException e1) {
-							JOptionPane.showMessageDialog(null, "Niste uneli tražene podatke!", "Greška", JOptionPane.ERROR_MESSAGE);
+							JOptionPane.showMessageDialog(null, "Niste uneli tračene podatke!", "Greška", JOptionPane.ERROR_MESSAGE);
 						
 						}
 					}

@@ -53,7 +53,7 @@ public class DlgRectangle extends JDialog {
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
 		
-		JLabel lblUnesiteSirinu = new JLabel("Unesite ≈°irinu:");
+		JLabel lblUnesiteSirinu = new JLabel("Unesite öirinu:");
 		lblUnesiteSirinu.setBounds(12, 42, 115, 15);
 		contentPanel.add(lblUnesiteSirinu);
 		
@@ -101,7 +101,7 @@ public class DlgRectangle extends JDialog {
 							h = Integer.parseInt(txtHeight.getText());
 							dispose();
 						} catch (NumberFormatException e1) {
-							JOptionPane.showMessageDialog(null,"Niste uneli tra≈æene podatke!", "Gre≈°ka", JOptionPane.ERROR_MESSAGE);
+							JOptionPane.showMessageDialog(null,"Niste uneli traûene podatke!", "Greöka", JOptionPane.ERROR_MESSAGE);
 
 						}
 					}
@@ -111,7 +111,7 @@ public class DlgRectangle extends JDialog {
 				getRootPane().setDefaultButton(okButton);
 			}
 			{
-				JButton cancelButton = new JButton("Cancel");
+				JButton cancelButton = new JButton("Odustani");
 				cancelButton.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						dispose();

@@ -72,7 +72,7 @@ public class DlgRectangleModification extends JDialog {
 		lblNewLabel_1.setBounds(12, 41, 225, 15);
 		contentPanel.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("Sirina");
+		JLabel lblNewLabel_2 = new JLabel("äirina");
 		lblNewLabel_2.setBounds(12, 83, 70, 15);
 		contentPanel.add(lblNewLabel_2);
 		
@@ -140,7 +140,7 @@ public class DlgRectangleModification extends JDialog {
 		lblBojaIvice.setBounds(12, 161, 94, 15);
 		contentPanel.add(lblBojaIvice);
 		
-		JLabel lblBojaUnutrasnjosti = new JLabel("Boja unutra≈°njosti:");
+		JLabel lblBojaUnutrasnjosti = new JLabel("Boja unutraönjosti:");
 		lblBojaUnutrasnjosti.setBounds(12, 188, 166, 15);
 		contentPanel.add(lblBojaUnutrasnjosti);
 		
@@ -188,7 +188,7 @@ public class DlgRectangleModification extends JDialog {
 							
 						} catch (NumberFormatException e2) {
 							// TODO: handle exception
-							JOptionPane.showMessageDialog(null,"Niste uneli tra≈æene podatke!", "Gre≈°ka", JOptionPane.ERROR_MESSAGE);
+							JOptionPane.showMessageDialog(null,"Niste uneli traûene podatke!", "Greûka", JOptionPane.ERROR_MESSAGE);
 						}
 					}
 				});

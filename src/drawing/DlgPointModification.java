@@ -125,7 +125,7 @@ public class DlgPointModification extends JDialog {
 							setVisible(false);
 							
 						} catch (NumberFormatException e2) {
-							JOptionPane.showMessageDialog(null,"Niste uneli tra≈æene podatke!", "Gre≈°ka", JOptionPane.ERROR_MESSAGE);
+							JOptionPane.showMessageDialog(null,"Niste uneli traûene podatke!", "Greöka", JOptionPane.ERROR_MESSAGE);
 						}
 					}
 				});

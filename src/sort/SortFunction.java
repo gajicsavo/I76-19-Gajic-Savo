@@ -31,6 +31,7 @@ public class SortFunction {
 		Random r = new Random();
 
 		for (int i = 0; i < list.length; i++) {
+
 			list[i] = new Rectangle(new Point(r.nextInt(9) + 1, r.nextInt(9) + 1), r.nextInt(9) + 1, r.nextInt(9) + 1);
 		}
 

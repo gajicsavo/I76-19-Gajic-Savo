@@ -4,6 +4,7 @@ import java.awt.EventQueue;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 import javax.swing.DefaultListModel;
 import javax.swing.GroupLayout;
@@ -70,6 +71,7 @@ public class Stack extends JFrame {
 					Rectangle r = new Rectangle(
 							new Point(Integer.parseInt(dlgS.getTxtX().getText()),
 									Integer.parseInt(dlgS.getTxtY().getText())),
+							
 							Integer.parseInt(dlgS.getTxtHeight().getText()),
 							Integer.parseInt(dlgS.getTxtWidth().getText()));
 
@@ -79,12 +81,36 @@ public class Stack extends JFrame {
 			}
 		});
 
-		JButton btnNewButton = new JButton("Izbri≈°i");
+		JButton btnNewButton = new JButton("Izbriöi");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 				DlgStack dlgS = new DlgStack();
+				
+				if(!list.isSelectionEmpty()) {
+					
+					
+					String[] split = list.getSelectedValue().toString().split(" ");
+					
+					dlgS.getTxtX().setText(split[2].replaceAll("\\D+", ""));
 
-				if (dlm.isEmpty()) {
+					dlgS.getTxtY().setText(split[3].replaceAll("\\D+", ""));
+
+					dlgS.getTxtWidth().setText(split[4].replaceAll("\\D+", ""));
+
+					dlgS.getTxtHeight().setText(split[5].replaceAll("\\D+", ""));
+
+					dlgS.setVisible(true);
+					
+						if(dlgS.isOk) {
+							
+						dlm.removeElement(list.getSelectedValue());
+						
+						}
+				}else {
+					JOptionPane.showMessageDialog(null, "Niste selektovali nijedan Pravougaonik!");
+				}
+				/*if (dlm.isEmpty()) {
 					
 					JOptionPane.showMessageDialog(null, "Lista je prazna!");
 					
@@ -107,7 +133,7 @@ public class Stack extends JFrame {
 						dlm.remove(0);
 
 					}
-				}
+				}*/
 			}
 		});
 
