@@ -107,33 +107,11 @@ public class Stack extends JFrame {
 						dlm.removeElement(list.getSelectedValue());
 						
 						}
+				
 				}else {
 					JOptionPane.showMessageDialog(null, "Niste selektovali nijedan Pravougaonik!");
 				}
-				/*if (dlm.isEmpty()) {
-					
-					JOptionPane.showMessageDialog(null, "Lista je prazna!");
-					
-				} else {
-				
-					String[] split = dlm.getElementAt(0).toString().split(" ");
-
-					dlgS.getTxtX().setText(split[2].replaceAll("\\D+", ""));
-
-					dlgS.getTxtY().setText(split[3].replaceAll("\\D+", ""));
-
-					dlgS.getTxtWidth().setText(split[4].replaceAll("\\D+", ""));
-
-					dlgS.getTxtHeight().setText(split[5].replaceAll("\\D+", ""));
-
-					dlgS.setVisible(true);
-
-					if (dlgS.isOk) {
-
-						dlm.remove(0);
-
-					}
-				}*/
+			
 			}
 		});
 

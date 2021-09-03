@@ -25,6 +25,7 @@ public class DlgDonut extends JDialog {
 	private JTextField txtRadius;
 	private JTextField txtInnerRadius;
 	int radius, innerRadius;
+
 	/**
 	 * Launch the application.
 	 */
@@ -54,7 +55,7 @@ public class DlgDonut extends JDialog {
 			contentPanel.add(lblNewLabel);
 		}
 		{
-			JLabel lblNewLabel_1 = new JLabel("Unesite unutra�nji radius:");
+			JLabel lblNewLabel_1 = new JLabel("Unesite unutrašnji radius:");
 			lblNewLabel_1.setBounds(12, 76, 212, 15);
 			contentPanel.add(lblNewLabel_1);
 		}
@@ -97,11 +98,22 @@ public class DlgDonut extends JDialog {
 				okButton.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						try {
+							
 							radius = Integer.parseInt(txtRadius.getText());
 							innerRadius = Integer.parseInt(txtInnerRadius.getText());
+							
+							if(radius > innerRadius) {
+							
 							dispose();
+							
+							}else{
+								
+								JOptionPane.showMessageDialog(null, "Unutrašnji radius ne može biti veći od spoljašnjeg radiusa!");
+								
+							}
+							
 						} catch (NumberFormatException e1) {
-							JOptionPane.showMessageDialog(null, "Niste uneli tra�ene podatke!", "Gre�ka", JOptionPane.ERROR_MESSAGE);							
+							JOptionPane.showMessageDialog(null, "Niste uneli tražene podatke!", "Greška", JOptionPane.ERROR_MESSAGE);							
 
 						}
 					}
